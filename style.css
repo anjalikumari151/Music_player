@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ebe8f5;
+    gap:45px;
+    padding:20px;
+}
+
+/* LEFT PANEL */
+
+.left-panel{
+    width:360px;
+    height:620px;
+    background:#f5f5f7;
+    border-radius:40px;
+    padding:28px;
+    position:relative;
+
+    box-shadow:
+    10px 10px 22px rgba(0,0,0,0.08),
+    -10px -10px 22px rgba(255,255,255,0.9);
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.top h2{
+    font-size:32px;
+}
+
+.menu{
+    font-size:26px;
+    cursor:pointer;
+}
+
+/* SONG LIST */
+
+.song-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-top:10px;
+}
+
+.song{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:12px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.song:hover{
+    background:#ececf1;
+}
+
+.song img{
+    width:68px;
+    height:68px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.song-info{
+    flex:1;
+}
+
+.song-info h4{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.song-info p{
+    color:gray;
+    font-size:14px;
+}
+
+/* ACTIVE SONG */
+
+.song.active{
+    background:white;
+
+    box-shadow:
+    5px 5px 12px rgba(0,0,0,0.08),
+    -5px -5px 12px rgba(255,255,255,0.9);
+}
+
+.song.active img{
+    border:3px solid black;
+}
+
+/* SMALL PLAY BUTTON */
+
+.play-small{
+    border:none;
+    padding:8px 16px;
+    border-radius:20px;
+    background:#f1f1f1;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:bold;
+    flex-shrink:0;
+
+    box-shadow:
+    3px 3px 8px rgba(0,0,0,0.06),
+    -3px -3px 8px rgba(255,255,255,0.9);
+}
+
+/* BOTTOM ICONS */
+
+.bottom-icons{
+    position:absolute;
+    bottom:22px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:75%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.bottom-icons i{
+    width:52px;
+    height:52px;
+    background:#f5f5f7;
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+    cursor:pointer;
+
+    box-shadow:
+    5px 5px 12px rgba(0,0,0,0.08),
+    -5px -5px 12px rgba(255,255,255,0.9);
+}
+
+/* RIGHT PLAYER */
+
+.player{
+    width:400px;
+    height:620px;
+    background:#f5f5f7;
+    border-radius:40px;
+    padding:25px;
+
+    box-shadow:
+    10px 10px 22px rgba(0,0,0,0.08),
+    -10px -10px 22px rgba(255,255,255,0.9);
+}
+
+/* PLAYER TOP */
+
+.player-top{
+    display:flex;
+    justify-content:space-between;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+/* COVER */
+
+.cover{
+    width:100%;
+    height:310px;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* MUSIC INFO */
+
+.music-info{
+    text-align:center;
+    margin-top:22px;
+}
+
+.music-info h2{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.music-info p{
+    color:gray;
+    font-size:17px;
+}
+
+/* WAVE */
+
+.wave{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:6px;
+    height:42px;
+    margin-top:28px;
+}
+
+.wave span{
+    width:6px;
+    border-radius:20px;
+    background:#555;
+    animation:wave 1s infinite;
+}
+
+.wave span:nth-child(1){height:12px;}
+.wave span:nth-child(2){height:28px;}
+.wave span:nth-child(3){height:18px;}
+.wave span:nth-child(4){height:34px;}
+.wave span:nth-child(5){height:20px;}
+
+@keyframes wave{
+
+    0%{
+        transform:scaleY(1);
+    }
+
+    50%{
+        transform:scaleY(1.8);
+    }
+
+    100%{
+        transform:scaleY(1);
+    }
+
+}
+
+/* TIME */
+
+.time{
+    text-align:center;
+    margin-top:18px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* CONTROLS */
+
+.controls{
+    margin-top:32px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+}
+
+.controls button{
+    border:none;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#f5f5f7;
+    font-size:26px;
+    cursor:pointer;
+
+    box-shadow:
+    5px 5px 12px rgba(0,0,0,0.08),
+    -5px -5px 12px rgba(255,255,255,0.9);
+}
+
+.play-btn{
+    width:95px !important;
+    height:95px !important;
+}
+
+audio{
+    display:none;
+}
