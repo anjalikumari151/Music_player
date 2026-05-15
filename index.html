@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LEFT PANEL -->
+
+    <div class="left-panel">
+
+        <div class="top">
+            <h2>Explore</h2>
+            <div class="menu">⋯</div>
+        </div>
+
+        <div class="song-list">
+
+            <div class="song active" data-index="0">
+
+                <img src="songimg1.png">
+
+                <div class="song-info">
+                    <h4>Dil</h4>
+                    <p>Raghav Chaitanya</p>
+                </div>
+
+                <button class="play-small">Play</button>
+
+            </div>
+
+            <div class="song" data-index="1">
+
+                <img src="songimg2.png">
+
+                <div class="song-info">
+                    <h4>Shaamat</h4>
+                    <p>Ankit Tiwari</p>
+                </div>
+
+                <button class="play-small">Play</button>
+
+            </div>
+
+            <div class="song" data-index="2">
+
+                <img src="songimg3.png">
+
+                <div class="song-info">
+                    <h4>Sahiba</h4>
+                    <p>Aditya Rikhari</p>
+                </div>
+
+                <button class="play-small">Play</button>
+
+            </div>
+
+            <div class="song" data-index="3">
+
+                <img src="songimg4.png">
+
+                <div class="song-info">
+                    <h4>Tu Hai Toh Mai Hoon</h4>
+                    <p>Irshad Kamil</p>
+                </div>
+
+                <button class="play-small">Play</button>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM ICONS -->
+
+        <div class="bottom-icons">
+            <i>⌂</i>
+            <i>◉</i>
+            <i>☰</i>
+        </div>
+
+    </div>
+
+    <!-- RIGHT PLAYER -->
+
+    <div class="player">
+
+        <div class="player-top">
+            <span>‹</span>
+            <span>⋯</span>
+        </div>
+
+        <div class="cover">
+            <img id="cover" src="songimg1.png">
+        </div>
+
+        <div class="music-info">
+            <h2 id="title">Dil</h2>
+            <p id="artist">Raghav Chaitanya</p>
+        </div>
+
+        <div class="wave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="time">
+            <span id="current">0:00</span> /
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play" class="play-btn">▶</button>
+            <button id="next">⏭</button>
+        </div>
+
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
