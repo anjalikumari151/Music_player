@@ -289,3 +289,149 @@ body{
 audio{
     display:none;
 }
+/* =========================
+   RESPONSIVE MEDIA QUERY
+========================= */
+
+@media (max-width: 950px){
+
+    body{
+        flex-direction:column;
+        height:auto;
+        padding:30px 15px;
+    }
+
+    .left-panel,
+    .player{
+        width:100%;
+        max-width:420px;
+    }
+
+}
+
+/* MOBILE DEVICES */
+
+@media (max-width: 500px){
+
+    body{
+        gap:25px;
+        padding:20px 10px;
+    }
+
+    .left-panel,
+    .player{
+        width:100%;
+        height:auto;
+        border-radius:30px;
+        padding:20px;
+    }
+
+    .top h2{
+        font-size:26px;
+    }
+
+    .menu{
+        font-size:22px;
+    }
+
+    /* SONG */
+
+    .song{
+        gap:12px;
+        padding:10px;
+    }
+
+    .song img{
+        width:55px;
+        height:55px;
+    }
+
+    .song-info h4{
+        font-size:16px;
+    }
+
+    .song-info p{
+        font-size:12px;
+    }
+
+    .play-small{
+        padding:6px 12px;
+        font-size:11px;
+    }
+
+    /* BOTTOM ICONS */
+
+    .bottom-icons{
+        position:static;
+        transform:none;
+        width:100%;
+        margin-top:25px;
+    }
+
+    .bottom-icons i{
+        width:45px;
+        height:45px;
+        font-size:18px;
+    }
+
+    /* PLAYER */
+
+    .player-top{
+        font-size:22px;
+    }
+
+    .cover{
+        height:240px;
+        border-radius:22px;
+    }
+
+    .music-info{
+        margin-top:18px;
+    }
+
+    .music-info h2{
+        font-size:24px;
+    }
+
+    .music-info p{
+        font-size:14px;
+    }
+
+    /* WAVE */
+
+    .wave{
+        margin-top:20px;
+        height:35px;
+    }
+
+    .wave span{
+        width:5px;
+    }
+
+    /* TIME */
+
+    .time{
+        margin-top:15px;
+        font-size:16px;
+    }
+
+    /* CONTROLS */
+
+    .controls{
+        gap:18px;
+        margin-top:25px;
+        flex-wrap:wrap;
+    }
+
+    .controls button{
+        width:60px;
+        height:60px;
+        font-size:20px;
+    }
+
+    .play-btn{
+        width:75px !important;
+        height:75px !important;
+    }
+
+}
